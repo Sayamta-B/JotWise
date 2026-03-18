@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Sign Up</title>
+    <link rel="stylesheet" href="http://localhost/JotWise/css/form.css">
+    <script src="http://localhost/JotWise/js/userRegister.js"></script>
+</head>
+<body>
+    <div class="box">
+    <p class="title">User Sign Up</p>
+    <form method="POST" action="http://localhost/JotWise/php/registerUser.php" onsubmit="return check()">
+        <div class="formLine">
+            <label>Enter Username:</label> <input type="text" name="Username" id="Username" required>
+        </div>
+        <span id="usernameErr"></span>
+
+       <div class="formLine">
+            <label>Enter Email:</label> <input type="text" name="Email" id="Email" required>
+        </div>
+        <span id="emailErr"></span>
+
+        <div class="formLine">
+            <label>Create Password:</label> <input type="password" name="CreatePassword" id="CreatePassword" required>
+        </div>
+        <span id="createPassErr"></span>
+
+        <div class="formLine">
+            <label>Confirm Password:</label><input type="password" name="ConfirmPassword" id="ConfirmPassword" required>
+        </div>
+        <span id="confirmPassErr"></span><br/><br/>
+
+        <div class="formLine">
+            <label>Role:</label>
+            <select name="Role" id="Role">
+                <option value="user" selected>User</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div><br/><br/><br/>
+
+        <input type="submit" class="button" value="Sign-up">
+    </form>
+    </div>
+    </div>
+</body>
+</html>

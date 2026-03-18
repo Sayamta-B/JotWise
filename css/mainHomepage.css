@@ -1,0 +1,168 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+}
+
+.nav{
+    display: flex;
+    gap: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a.active{
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.button{
+    width: 96px;
+    height: 36px;
+    background: black;
+    color: white;
+    border-radius: 25px;
+}
+
+.button:hover{
+    background: grey;
+    color: white;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.carousel{
+    padding: 0;
+    margin: 0;
+    width: 1800px;
+    max-width: 100vw;
+    height: 500px;
+    position: relative;
+    /* relative position-> allows positioned child elements to be positioned relative to relative positioned element
+    Here= class ".carousel"*/
+}
+
+/* CSS for space for div inside carousel space */
+.list{
+    background: #000;
+    margin: 0px;
+    position: absolute;
+    /* absolute position-> position can be affected in relative to relative parent positioned elements
+    Here= class ".carousel" is relavite parent position*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+}
+
+
+/* CSS for space for pictures inside carousel list space */
+ .list img{
+    margin: 0px;
+    width: 1800px;
+    max-width: 100vw;
+    height:100%;
+    object-fit:cover;
+} 
+
+.headerImg {
+    margin: 0px;
+    display: none; /* Initially hide all images */
+    width: 100%;
+}
+
+.headerImg.active {
+    display: block; /* Only the active image is shown */
+}
+
+/* CSS for buttons */
+.buttons{
+    margin: 0;
+    position: absolute;
+    top:45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    gap: 1100px;
+}
+
+button{
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+}
+
+/* CSS for dots space */
+.dots{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+}
+
+/* CSS for dots */
+.dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.dots li.active{
+    width: 30px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    border-top: 1px solid gainsboro;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 items in a row */
+    margin-left: 40px;
+}
+
+.view{
+    width: 200px;
+    height: auto;
+}
+
+.title{
+    margin: 30px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.comment{
+    border-bottom: 1px solid gray;
+}

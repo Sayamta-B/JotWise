@@ -1,0 +1,103 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.secondHeader{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+}
+
+.nav{
+    display: flex;
+    gap: 48px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav a.active{
+    border-bottom: 1px solid black;
+}
+
+.box{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div .title{
+    border-radius: 5px;
+    font-size: 25px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.formLine{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label{
+    font-size: 18px;
+    color:black;
+    text-decoration: green;
+}
+
+form input{
+    width: 400px;
+    height: 25px;
+    border-radius: 20px;
+    border: 0px;
+    outline:0px;
+    align-items: center;
+    background-color: lightsteelblue;
+}
+
+textarea{
+    width: 400px;
+    border: 0px;
+    outline:0px;
+    align-items: center;
+    background-color: lightsteelblue;
+}
+
+form input:focus{
+    border:1px solid black;
+}
+
+.button{
+    width: 150px;
+    height: 30px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background: grey;
+    color: white;
+}
+
+.view{
+    width: 160px;
+    height: auto;
+}

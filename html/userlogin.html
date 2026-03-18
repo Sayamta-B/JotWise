@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Sign-In</title>
+    <link rel="stylesheet" href="http://localhost/JotWise/css/form.css">
+
+    <script src="http://localhost/JotWise/js/userlogin.js"></script>
+</head>
+<body>
+    <div class="box">
+    <p class="title">User Log In</p>
+
+        <form method="POST" action="http://localhost/JotWise/php/userlogin.php" onsubmit="return checkEmpty()" autocomplete="off">
+        <div class="formLine">
+            <input type="text" name="UserNameOremail" placeholder="Username or Email">
+        </div>
+        <span id="identifierErr"></span><br/>
+            
+        <div class="formLine">
+        <input type="password" name="Password" placeholder="Password">
+        </div>
+        <span id="passwordErr"></span><br/><br/>
+
+            <input type="submit" value="Log-in" class="button">
+            <p>Dont have an account?</p> <a href="http://localhost/JotWise/html/registerUser.html">Register now!</a>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

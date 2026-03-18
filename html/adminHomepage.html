@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JotWise</title>
+    <script src="../js/adminPage.js"></script>
+    <link rel="stylesheet" href="http://localhost/JotWise/CSS/adminPage.css">
+</head>
+<body>
+    <div class="header">
+        <h1>JotWise</h1>
+        <input type="button" class="button" value="Log Out" onclick="window.location.href = '../php/logOut.php';">
+    </div>
+    <div class="secondHeader">
+        <div class="nav">
+            <a href="adminHomepage.html" class="active">Add Shows</a>
+            <a href="../php/viewSeries.php">View Shows</a>
+            <a href="../php/viewUser.php">View Users</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <form method="POST" action="../php/adminPage.php" enctype="multipart/form-data" onsubmit="return validate()">
+            <h1 class="title">Add Series Review</h1>
+                <div class="formLine">
+                    <label>Series Name:</label>
+                    <input type="text" name="S_name" id="S_name">
+                </div>
+
+                <div class="formLine">
+                    <label>Genre:</label>
+                    <input type="text" name="Genre" id="Genre">
+                </div>
+
+                <div class="formLine">
+                    <label>No. of Episodes:</label>
+                    <input type="number" name="Episodes" id="Episodes">
+                </div>
+
+                <div class="formLine">
+                    <label>Duration per Episode(in minutes):</label>
+                    <input type="text" name="Duration" id="Duration">
+                </div>
+
+                <div class="formLine">
+                    <label>Release Date:</label>
+                    <input type="text" name="ReleaseDate" id="ReleaseDate">
+                </div>
+
+                <div class="formLine">
+                    <label>Rate this series(?/10):</label>
+                    <input type="float" name="Rate" id="Rate">
+                </div>
+
+                <div class="formLine">
+                    <label>Series Image:</label>
+                    <input type="file" name="Image" id="Image" required>
+                </div>
+                 
+                <div class="formLine">
+                    <label>Series Description:</label>
+                    <textarea name="Description" id="Description"></textarea>
+                </div><br/>
+
+                <input type="submit" value="ADD" class="button">
+        </form>
+    </div>
+
+</body>
+</html>
